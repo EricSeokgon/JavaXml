@@ -1,4 +1,4 @@
-package JDOMXMLParser;
+package JavaSAXParser;
 
 /**
  * Project: TutorialsPointJava8

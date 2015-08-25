@@ -1,4 +1,4 @@
-package JDOMXMLParser;
+package JavaSAXParser;
 
 /**
  * Project: TutorialsPointJava8
@@ -9,19 +9,20 @@ package JDOMXMLParser;
  * Note:
  * To change this template use File | Settings | File Templates.
  */
-import java.io.File;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.File;
+
 public class SAXParserDemo {
     public static void main(String[] args){
 
         try {
-            File inputFile = new File("C:\\Users\\sklee\\IdeaProjects\\JavaXml\\src\\JDOMXMLParser\\input.txt");
+            File inputFile = new File("C:\\Users\\sklee\\IdeaProjects\\JavaXml\\src\\JavaSAXParser\\input.txt");
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             UserHandler userhandler = new UserHandler();
